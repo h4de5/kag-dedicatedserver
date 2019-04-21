@@ -51,3 +51,16 @@ Create a Security directory in the same location as your startup script then add
 If you need to change the autoconfig beyond what the environment variables can do, you can create an autoconfig.cfg file in the same location as your script.
 
 `-v autoconfig.cfg:/opt/KAG/autoconfig.cfg`
+
+## Using docker-compose
+For installing docker-compose see: https://docs.docker.com/compose/install/
+
+All environment variables listed above can be modified in the `docker-compose.yml` file. To start the container run the following command in the cloned directory:
+
+`docker-compose up -d`
+
+This is similar to the `docker run` command from above.
+
+To rebuild your docker image in place and make sure you run the latest server binary, execute this command:
+
+`docker-compose up -d --force-recreate --build`
