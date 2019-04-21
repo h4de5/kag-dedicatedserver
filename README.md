@@ -13,7 +13,7 @@ Then start your server with `./run.sh`
 # Running
 Create a script to start the docker container with the correct parameters
 
-docker run --rm -d -p 50301:50301 harrisonmiller/kag-dedicatedserver:latest
+`docker run --rm -d -p 50301:50301 harrisonmiller/kag-dedicatedserver:latest`
 
 You can copy the example script run.sh and the Security folder.
 The security folder contains the Official KAG Server Admin Seclev.
@@ -22,8 +22,8 @@ You should also add your own name to the superadmin.cfg
 # Configuration
 Use the environment variables as needed to configure the basics of your server
 
-docker run --rm -d -p 50301:50301 -e NAME="Verra's CTF" \
-	-e DESCRIPTION="Vanilla CTF server hosted by Verra" harrisonmiller/kag-dedicatedserver:latest
+`docker run --rm -d -p 50301:50301 -e NAME="Verra's CTF" \
+	-e DESCRIPTION="Vanilla CTF server hosted by Verra" harrisonmiller/kag-dedicatedserver:latest`
 
 Additional environment variables and their defaults
 ```
